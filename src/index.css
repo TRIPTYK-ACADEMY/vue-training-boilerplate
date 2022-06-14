@@ -38,12 +38,19 @@
 .form-control.input input {
   @apply mt-1 focus:ring-emerald-500 focus:border-emerald-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md;
 }
+.form-control.input input:disabled {
+  @apply bg-gray-300 text-gray-500;
+}
 
 .form-control.textarea label {
   @apply block text-sm font-medium text-gray-700;
 }
 .form-control.textarea textarea {
   @apply mt-1 focus:ring-emerald-500 focus:border-emerald-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md;
+}
+
+.form-control.textarea textarea:disabled {
+  @apply bg-gray-300 text-gray-500;
 }
 
 .form-control.select label {
